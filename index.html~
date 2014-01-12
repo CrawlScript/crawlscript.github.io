@@ -109,9 +109,10 @@
 		<div class="menu-top-container">
 	<ul id="menu-top" class="menu">
 	
-	<li class="menu-item current"><a href="http://api.jquery.com/">API文档</a></li>
-	<li class="menu-item"><a href="http://api.jquery.com/">教程</a></li>
-	<li class="menu-item"><a href="http://jquery.com/download/">下载</a></li>
+	<li class="menu-item current"><a href="index.html">简介</a></li>
+	<li class="menu-item"><a href="tutorial.html">教程</a></li>
+	<li class="menu-item"><a href="api.html">API文档</a></li>
+	<li class="menu-item"><a href="download.html">下载</a></li>
 
 
 	</ul>
@@ -123,19 +124,20 @@
 	<div id="content-wrapper" class="clearfix row">
 <div class="content-right listing twelve columns">
 	<div id="content">
-		<h1 class="page-title">CrawlScript API</h1>
+		<h1 class="page-title">CrawlScript 语言</h1>
 		<hr>
 <article id="post-3" class="post-4 post type-post status-publish format-standard hentry category-miscellaneous-traversal category-10 category-14">
 	<header class="entry-header">
 		<div class="entry-meta">
 		</div>
 				<h1 class="entry-title">
-				<a  rel="bookmark">ECMA</a>
+				<a  rel="bookmark">网络爬虫脚本语言 CrawlScript</a>
 			</h1>
 			</header>
 
 		<div class="entry-summary">
-		<p>CrawlScript是在ECMA标准的基础上设计的语言，是一种javascript,在语法上和网页开发中使用的javascript完全相同，但是并不支持网页开发中所特有的函数和对象，如document、alert()在CrawlScript中会失效。CrawlScript有自己的一套特有的函数和对象，详细请看下面的API。</p>
+		<p>网络爬虫即自动获取网页信息的一种程序，有很多JAVA、C++的网络爬虫类库，但是在这些类库的基础上开发十分繁琐，需要大量的代码才可以完成一个简单的操作。鉴于这个问题，我们开发了CrawlScript这种脚本语言，程序员只需要写2-3行简单的代码，就可以制作一个强大的网络爬虫。同时，CrawlScript由JAVA编写，可以在其他JAVA程序中被简单调用。</p>
+		
 	</div><!-- .entry-summary -->
 </article>
 		
@@ -144,12 +146,12 @@
 		<div class="entry-meta">
 		</div>
 				<h1 class="entry-title">
-				<a  rel="bookmark">$</a>
+				<a  rel="bookmark">CrawlScript是一种具有爬虫功能的javascript</a>
 			</h1>
 			</header>
 
 		<div class="entry-summary">
-		<p>$是CrawlScript最核心的一个对象，它封装了爬虫常用一些方法，为了简化操作，$也可以当一个函数使用。</p>
+		<p>CrawlScript是在ECMA标准的基础上设计的语言，是一种javascript,在语法上和网页开发中使用的javascript完全相同，但是并不支持网页开发中所特有的函数和对象，如document、alert()在CrawlScript中会失效。CrawlScript有自己的一套特有的函数和对象，详细请看<a href="api.html">CrawlScript API</a>。</p>
 	</div><!-- .entry-summary -->
 </article>
 		
@@ -232,7 +234,7 @@
 		<div class="entry-meta">
 			</div>
 					<h1 class="entry-title">
-				<a href="http://api.jquery.com/ajaxError/" title="Permalink to .ajaxError()" rel="bookmark">doc.div() doc.div(index)</a>
+				<a rel="bookmark">doc.div() doc.div(index)</a>
 			</h1>
 			</header>
 
@@ -244,6 +246,21 @@
 </article>
 
 
+<article id="post-16" class="post-16 post type-post status-publish format-standard hentry category-global-ajax-event-handlers category-10">
+	<header class="entry-header">
+		<div class="entry-meta">
+			</div>
+					<h1 class="entry-title">
+				<a rel="bookmark">doc.div() doc.div(index)</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>doc.div()返回doc中所有的div元素组成的集合,doc.div(index)表示由doc中第index个div元素组成的集合。</p>
+		<p>还有一些类似的函数，下面API中不详细说明。doc.a(),doc.a(index),doc.ul(),doc.ul(index)......</p>
+		<p>由于doc.div()返回的还是DOM元素集合，所以此类函数经常连续着使用，如：doc.div().p().a()</p>
+	</div><!-- .entry-summary -->
+</article>
 	</div>
 
 	<div id="sidebar" class="widget-area" role="complementary">
@@ -253,7 +270,7 @@
 			<li class="cat-item cat-item-1"><a href="http://api.jquery.com/category/ajax/" title="View all posts filed under Ajax">相关文档</a>
 			<ul class='children'>
 					<li class="cat-item cat-item-2"><a href="http://api.jquery.com/category/ajax/global-ajax-event-handlers/" title="View all posts filed under Global Ajax Event Handlers">CrawlScript教程</a></li>
-					<li class="cat-item cat-item-3"><a href="http://api.jquery.com/category/ajax/helper-functions/" title="View all posts filed under Helper Functions">CrawlScript下载</a></li>
+					<li class="cat-item cat-item-3"><a href="https://github.com/CrawlScript/CrawlScript" title="Download CrawlScript">CrawlScript下载</a></li>
 					
 			</ul>
 			</li>
