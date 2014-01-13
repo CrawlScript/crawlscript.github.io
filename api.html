@@ -99,6 +99,23 @@
 		<br><p><b>实例-显示网页的所有文字:</b><br/>doc=$("http://www.baidu.com");<br/>print(doc);</p>
 	</div><!-- .entry-summary -->
 </article>
+        
+<article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-miscellaneous-traversal category-10 category-14">
+	<header class="entry-header">
+		<div class="entry-meta">
+		</div>
+				<h1 class="entry-title">
+				<a  rel="bookmark">$(url,agent)</a>
+			</h1>
+			</header>
+
+		<div class="entry-summary">
+		<p>根据网页的url和指定的客户端agent获取一个网页的DOM元素集合.</p>
+        <p>$(url)默认以windows火狐浏览器作为客户端,其实是缺省了参数的$(url,agent)函数。</p>
+        <p>agent的取值可以是标准的http的agent定义,如"Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/20100101 Firefox/22.0",也可以是"windows"(缩写："win","w"),"mobile"(缩写:"m").</p>
+            <br><p><b>实例-显示手机版网页的所有文字:</b><br/>doc=$("http://www.baidu.com","m");<br/>print(doc);</p>
+	</div><!-- .entry-summary -->
+</article>
 
 <article id="post-7" class="post-7 post type-post status-publish format-standard hentry category-miscellaneous-traversal category-18">
 	<header class="entry-header">
