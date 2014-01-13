@@ -224,9 +224,9 @@
 			</header>
 
 		<div class="entry-summary">
-		<p>doc.div()返回doc中所有的div元素组成的集合,doc.div(index)表示由doc中第index个div元素组成的集合。</p>
+		<p>doc.div()返回doc中所有的div元素组成的集合(elements类型),doc.div(index)表示由doc中第index个div元素(element类型）。此方法对element(document)和elements类型的元素适用.</p>
 		<p>还有一些类似的函数，下面API中不详细说明。doc.a(),doc.a(index),doc.ul(),doc.ul(index)......</p>
-		<p>由于doc.div()返回的还是DOM元素集合，所以此类函数经常连续着使用，如：doc.div().p().a()</p>
+		<p>由于doc.div()的返回值是element或elements,所以此类函数经常连续着使用,如：doc.div().p().a()</p>
 	</div><!-- .entry-summary -->
 </article>
 
@@ -241,7 +241,7 @@
 			</header>
 
 		<div class="entry-summary">
-		<p>返回DOM元素集合doc中元素的数量.</p>
+		<p>返回DOM元素集合doc中元素的数量.此方法只使用于元素集合(elements类型).</p>
 	
 	</div><!-- .entry-summary -->
 </article>
