@@ -117,25 +117,30 @@
 		<br><p><b>实例-显示网页的所有文字:</b><br/>doc=$("http://www.baidu.com");<br/>print(doc);</p>
 	</div><!-- .entry-summary -->
 </article>
-        <!--
+       
 <article id="post-6" class="post-6 post type-post status-publish format-standard hentry category-miscellaneous-traversal category-10 category-14">
 	<header class="entry-header">
 		<div class="entry-meta">
 		</div>
 				<h1 class="entry-title">
-				<a  rel="bookmark">$(url,agent)</a>
+				<a  rel="bookmark">$(url,httpconfig)</a>
 			</h1>
 			</header>
 
 		<div class="entry-summary">
-		<p>根据网页的url和指定的客户端agent获取一个网页的DOM树（树根）.</p>
-        <p>$(url)默认以windows火狐浏览器作为客户端,其实是缺省了参数的$(url,agent)函数。</p>
-        <p>agent的取值可以是标准的http的agent定义,如"Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/20100101 Firefox/22.0",也可以是"windows"(缩写："win","w"),"mobile"(缩写:"m").</p>
-            <br><p><b>实例-显示手机版网页的所有文字:</b><br/>doc=$("http://www.baidu.com","m");<br/>print(doc);</p>
+		<p>根据网页的url和指定的配置httpconfig获取一个网页的DOM树（树根）.</p>
+        <p>http是一个对象，有两种定义的方式：</p>
+        <p>1.用JSON定义:<br>httpconfig={"ip":"127.0.0.1","port":8087} 这里表示配置http请求的代理为("127.0.0.1",8087).</p>
+        <p>2.直接定义：<br>httpconfig=new Object();<br>
+        httpconfig.ip="127.0.0.1";<br>
+        httpconfig.port="8087";<br>
+        httpconfig.agent="windows";<br>
+        这里表示配置http请求的代理为("127.0.0.1",8087),并设置客户端为windows浏览器
+</p>
 	</div><!-- .entry-summary -->
 </article>
 
--->
+
 
 
 
